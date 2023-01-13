@@ -16,11 +16,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bE6-jO-wRj">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bE6-jO-wRj">
                                 <rect key="frame" x="60" y="109" width="273" height="100"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="g5I-oY-ZhX"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ckL-8I-Lhv" appends="YES" id="cy3-iz-9We"/>
+                                </connections>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Nnq-MV-Nsc">
                                 <rect key="frame" x="40" y="409" width="313" height="40"/>
@@ -58,8 +62,16 @@
                             <constraint firstItem="Nnq-MV-Nsc" firstAttribute="top" secondItem="bE6-jO-wRj" secondAttribute="bottom" constant="40" id="urC-Qo-hxM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="image" destination="bE6-jO-wRj" id="9wV-cD-4SS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ckL-8I-Lhv">
+                    <connections>
+                        <action selector="tap:" destination="BYZ-38-t0r" id="ie5-y7-8n1"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="114" y="-27"/>
         </scene>
