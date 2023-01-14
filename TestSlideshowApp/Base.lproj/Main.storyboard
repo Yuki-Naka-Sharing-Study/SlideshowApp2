@@ -62,9 +62,6 @@
                             <constraint firstItem="Nnq-MV-Nsc" firstAttribute="top" secondItem="bE6-jO-wRj" secondAttribute="bottom" constant="40" id="urC-Qo-hxM"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="image" destination="bE6-jO-wRj" id="9wV-cD-4SS"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="ckL-8I-Lhv">
