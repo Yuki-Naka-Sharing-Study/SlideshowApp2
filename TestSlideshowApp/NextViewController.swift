@@ -8,12 +8,22 @@
 import UIKit
 
 class NextViewController: UIViewController {
+    
+    @IBOutlet weak var imageView2: UIImageView!
+
+    var image: UIImage?
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        //遷移元から取得したimage(画像データ)をimageView2のimageに渡す
+        imageView2.image = image
+        
     }
+    
+    
     
 
     /*

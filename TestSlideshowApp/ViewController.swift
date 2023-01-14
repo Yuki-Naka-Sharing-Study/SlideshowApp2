@@ -13,6 +13,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    @IBAction func imageViewTapped(_ sender: Any) {
+        print("タップ")
         
         // 画像を設定
         let sampleImage = UIImage(named: "winter.jpeg")
@@ -23,13 +27,9 @@ class ViewController: UIViewController {
 
         //ViewControllerのimage(画像データ)をNextViewControllerのimage(変数)に渡す
         nextVC.imageView = imageView.image!
-
+        
         //画面遷移
         present(nextVC, animated: true, completion: nil)
-    }
-    
-    @IBAction func imageViewTapped(_ sender: Any) {
-        print("タップ")
     }
 }
 
