@@ -11,21 +11,11 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestSlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="TestSlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" ambiguous="YES" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bE6-jO-wRj">
-                                <rect key="frame" x="60" y="109" width="273" height="100"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="g5I-oY-ZhX"/>
-                                </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="ckL-8I-Lhv" appends="YES" id="cy3-iz-9We"/>
-                                </connections>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Nnq-MV-Nsc">
                                 <rect key="frame" x="40" y="409" width="313" height="40"/>
                                 <subviews>
@@ -49,10 +39,21 @@
                                     <constraint firstAttribute="height" constant="40" id="wB7-fz-jgS"/>
                                 </constraints>
                             </stackView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bE6-jO-wRj">
+                                <rect key="frame" x="60" y="184" width="273" height="100"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="g5I-oY-ZhX"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ckL-8I-Lhv" appends="YES" id="cy3-iz-9We"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="bE6-jO-wRj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Pt3-Qf-wCq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nnq-MV-Nsc" secondAttribute="trailing" constant="40" id="QWm-pA-Mnx"/>
                             <constraint firstItem="bE6-jO-wRj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="S7d-Yb-ktv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Nnq-MV-Nsc" secondAttribute="bottom" constant="40" id="SY8-ep-1vS"/>
@@ -62,6 +63,9 @@
                             <constraint firstItem="Nnq-MV-Nsc" firstAttribute="top" secondItem="bE6-jO-wRj" secondAttribute="bottom" constant="40" id="urC-Qo-hxM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="bE6-jO-wRj" id="22W-4q-5vC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="ckL-8I-Lhv">
@@ -75,7 +79,7 @@
         <!--Next View Controller-->
         <scene sceneID="rbz-Gb-Egv">
             <objects>
-                <viewController id="FpT-aU-35G" customClass="NextViewController" customModule="TestSlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NextViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FpT-aU-35G" customClass="NextViewController" customModule="TestSlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qQy-Gd-Oq7">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -94,6 +98,9 @@
                         <viewLayoutGuide key="safeArea" id="ink-W2-KyH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView2" destination="h41-ew-kB6" id="TPh-Q8-ah7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f64-Mi-y2S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

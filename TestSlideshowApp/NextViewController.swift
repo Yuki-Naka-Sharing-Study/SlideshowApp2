@@ -13,8 +13,6 @@ class NextViewController: UIViewController {
 
     var image: UIImage?
     
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
