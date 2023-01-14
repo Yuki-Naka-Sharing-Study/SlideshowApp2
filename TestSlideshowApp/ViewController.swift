@@ -17,13 +17,6 @@ class ViewController: UIViewController {
     
     @IBAction func imageViewTapped(_ sender: Any) {
         print("タップ")
-        
-        // 画像を設定
-        let sampleImage = UIImage(named: "winter.jpeg")
-        imageView.image = sampleImage
-        
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let nextVC = storyboard.instantiateViewController(withIdentifier: "NextViewController") as! NextViewController
 
         //ViewControllerのimage(画像データ)をNextViewControllerのimage(変数)に渡す
         nextVC.imageView = imageView.image!
