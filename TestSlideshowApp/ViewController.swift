@@ -33,7 +33,7 @@ class ViewController: UIViewController {
     }
     
     // outletの接続
-    @IBOutlet weak var playbackStopButton: UIImageView!
+    @IBOutlet weak var playbackStopButton: UIButton!
     
         // 配列に指定するindex番号を宣言
         var nowIndex:Int = 0
@@ -48,14 +48,14 @@ class ViewController: UIViewController {
             UIImage(named: "summer.jpeg")!
         ]
     
-    // 再生ボタンを押した時の処理
+    // 再生/停止ボタンを押した時の処理
         @IBAction func slideShowButton(_ sender: Any) {
             // 再生中か停止しているかを判定
             if (timer == nil) {
                 // 再生時の処理を実装
 
                 // タイマーをセットする
-                timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(changeImage), userInfo: nil, repeats: true)
+                timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(changeImage), userInfo: nil, repeats: true)
 
                 // ボタンの名前を停止に変える
                 playbackStopButton.setTitle("停止", for: .normal)
