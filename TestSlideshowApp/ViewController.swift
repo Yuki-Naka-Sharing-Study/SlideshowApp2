@@ -33,9 +33,8 @@ class ViewController: UIViewController {
     }
     
     // outletの接続
-        @IBOutlet weak var startButton: UIButton!
-        @IBOutlet weak var imageView: UIImageView!
-
+    @IBOutlet weak var playbackStopButton: UIImageView!
+    
         // 配列に指定するindex番号を宣言
         var nowIndex:Int = 0
 
@@ -59,7 +58,7 @@ class ViewController: UIViewController {
                 timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(changeImage), userInfo: nil, repeats: true)
 
                 // ボタンの名前を停止に変える
-                startButton.setTitle("停止", for: .normal)
+                playbackStopButton.setTitle("停止", for: .normal)
 
             } else {
                 // 停止時の処理を実装
@@ -70,7 +69,7 @@ class ViewController: UIViewController {
                 timer = nil
 
                 // ボタンの名前を再生に直しておく
-                startButton.setTitle("停止", for: .normal)
+                playbackStopButton.setTitle("停止", for: .normal)
             }
             
         }
