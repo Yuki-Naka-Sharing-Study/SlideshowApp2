@@ -70,7 +70,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="ckL-8I-Lhv">
                     <connections>
-                        <action selector="tap:" destination="BYZ-38-t0r" id="ie5-y7-8n1"/>
+                        <action selector="imageViewTapped:" destination="BYZ-38-t0r" id="DWF-lH-vHQ"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
