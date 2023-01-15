@@ -32,44 +32,60 @@ class ViewController: UIViewController {
         present(nextVC, animated: true, completion: nil)
     }
     
-    @IBOutlet weak var timerLabel: UILabel!
+    // outletの接続
+        @IBOutlet weak var startButton: UIButton!
+        @IBOutlet weak var imageView: UIImageView!
 
-       // タイマー
-       var timer: Timer!
+        // 配列に指定するindex番号を宣言
+        var nowIndex:Int = 0
 
-       // タイマー用の時間のための変数
-       var timer_sec: Float = 0
+        // スライドショーに使用するタイマーを宣言
+        var timer: Timer!
+
+        // スライドショーさせる画像の配列を宣言
+        var imageArray:[UIImage] = [
+            UIImage(named: "winter.jpeg")!,
+            UIImage(named: "spring.jpeg")!,
+            UIImage(named: "summer.jpeg")!
+        ]
     
-        @objc func updateTimer(_ timer: Timer) {
-            self.timer_sec += 0.1
-            self.timerLabel.text = String(format: "%.1f", self.timer_sec)
-        }
+    // 再生ボタンを押した時の処理
+        @IBAction func slideShowButton(_ sender: Any) {
+            // 再生中か停止しているかを判定
+            if (timer == nil) {
+                // 再生時の処理を実装
 
-        // 再生ボタン IBAction
-        @IBAction func startTimer(_ sender: Any) {
-            // 動作中のタイマーを1つに保つために、 timer が存在しない場合だけ、タイマーを生成して動作させる
-            if self.timer == nil {
-                self.timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateTimer(_:)), userInfo: nil, repeats: true)
+                // タイマーをセットする
+                timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(changeImage), userInfo: nil, repeats: true)
+
+                // ボタンの名前を停止に変える
+                startButton.setTitle("停止", for: .normal)
+
+            } else {
+                // 停止時の処理を実装
+                // タイマーを停止する
+                timer.invalidate()
+
+                // タイマーを削除しておく(timer.invalidateだけだとtimerがnilにならないため)
+                timer = nil
+
+                // ボタンの名前を再生に直しておく
+                startButton.setTitle("停止", for: .normal)
             }
-        }
-
-        // 一時停止ボタン IBAction
-        @IBAction func pauseTimer(_ sender: Any) {
-            // タイマーを停止
-            self.timer.invalidate()
-            self.timer = nil          // startTimer() の self.timer == nil で判断するために、 self.timer = nil としておく
-        }
-    
-        // リセットボタン IBAction
-        @IBAction func resetTimer(_ sender: Any) {
-            // リセットボタンを押すと、タイマーの時間を0に
-            self.timer_sec = 0
-            self.timerLabel.text = String(format: "%.1f", self.timer_sec)
             
-            if self.timer != nil {
-                self.timer.invalidate()   // タイマーを停止する
-                self.timer = nil          // startTimer() の self.timer == nil で判断するために、 self.timer = nil としておく
-            }
         }
-}
+    
+    @objc func changeImage() {
+            // indexを増やして表示する画像を切り替える
+            nowIndex += 1
 
+            // indexが表示予定の画像の数と同じ場合
+            if (nowIndex == imageArray.count) {
+                // indexを一番最初の数字に戻す
+                nowIndex = 0
+            }
+            // indexの画像をstoryboardの画像にセットする
+            imageView.image = imageArray[nowIndex]
+        }
+    
+}
