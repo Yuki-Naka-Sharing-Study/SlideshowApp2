@@ -57,7 +57,7 @@ class ViewController: UIViewController {
                 // タイマーをセットする
                 timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(changeImage), userInfo: nil, repeats: true)
 
-                // ボタンの名前を停止に変える
+                // ボタンの名前を「停止」にする
                 playbackStopButton.setTitle("停止", for: .normal)
 
             } else {
@@ -68,8 +68,8 @@ class ViewController: UIViewController {
                 // タイマーを削除しておく(timer.invalidateだけだとtimerがnilにならないため)
                 timer = nil
 
-                // ボタンの名前を再生に直しておく
-                playbackStopButton.setTitle("停止", for: .normal)
+                // ボタンの名前を「再生」にする
+                playbackStopButton.setTitle("再生", for: .normal)
             }
             
         }
