@@ -13,7 +13,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // 画像を設定
         let sampleImage = UIImage(named: "winter.jpeg")
         imageView.image = sampleImage
