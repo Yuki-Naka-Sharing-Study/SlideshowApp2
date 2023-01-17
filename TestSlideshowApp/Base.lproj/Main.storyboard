@@ -73,6 +73,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="LFG-HV-Hhw" id="2U3-kh-Tg6"/>
+                        <outlet property="goButton" destination="3mh-gm-dDZ" id="HcM-io-IJu"/>
                         <outlet property="imageView" destination="bE6-jO-wRj" id="22W-4q-5vC"/>
                         <outlet property="playbackStopButton" destination="jbP-JN-cFc" id="a6N-sX-pa5"/>
                     </connections>
