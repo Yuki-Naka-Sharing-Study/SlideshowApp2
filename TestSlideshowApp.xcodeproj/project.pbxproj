@@ -17,6 +17,7 @@
 		D1EE69A5297165310023663D /* winter.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D1EE69A4297165310023663D /* winter.jpeg */; };
 		D1EE69A7297165870023663D /* spring.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D1EE69A6297165870023663D /* spring.jpeg */; };
 		D1EE69A9297166720023663D /* summer.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D1EE69A8297166720023663D /* summer.jpeg */; };
+		D1EE69AD2976DFD70023663D /* autumn.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D1EE69AC2976DFD70023663D /* autumn.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		D1EE69A4297165310023663D /* winter.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = winter.jpeg; sourceTree = "<group>"; };
 		D1EE69A6297165870023663D /* spring.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spring.jpeg; sourceTree = "<group>"; };
 		D1EE69A8297166720023663D /* summer.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = summer.jpeg; sourceTree = "<group>"; };
+		D1EE69AC2976DFD70023663D /* autumn.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = autumn.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				D1EE69A4297165310023663D /* winter.jpeg */,
 				D1EE69A6297165870023663D /* spring.jpeg */,
 				D1EE69A8297166720023663D /* summer.jpeg */,
+				D1EE69AC2976DFD70023663D /* autumn.jpeg */,
 				D1EE699929712C000023663D /* LaunchScreen.storyboard */,
 				D1EE699C29712C000023663D /* Info.plist */,
 			);
@@ -141,6 +144,7 @@
 				D1EE69A5297165310023663D /* winter.jpeg in Resources */,
 				D1EE699B29712C000023663D /* LaunchScreen.storyboard in Resources */,
 				D1EE699829712C000023663D /* Assets.xcassets in Resources */,
+				D1EE69AD2976DFD70023663D /* autumn.jpeg in Resources */,
 				D1EE69A7297165870023663D /* spring.jpeg in Resources */,
 				D1EE699629712BFF0023663D /* Main.storyboard in Resources */,
 			);

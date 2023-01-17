@@ -41,7 +41,8 @@ class ViewController: UIViewController {
         var imageArray:[UIImage] = [
             UIImage(named: "winter.jpeg")!,
             UIImage(named: "spring.jpeg")!,
-            UIImage(named: "summer.jpeg")!
+            UIImage(named: "summer.jpeg")!,
+            UIImage(named: "autumun.jpeg")!
         ]
         
         // 画像の番号が正常な範囲を指しているかチェック
@@ -103,7 +104,8 @@ class ViewController: UIViewController {
     var imageArray:[UIImage] = [
         UIImage(named: "winter.jpeg")!,
         UIImage(named: "spring.jpeg")!,
-        UIImage(named: "summer.jpeg")!
+        UIImage(named: "summer.jpeg")!,
+        UIImage(named: "autumun.jpeg")!
     ]
     
     // 再生/停止ボタンを押した時の処理
