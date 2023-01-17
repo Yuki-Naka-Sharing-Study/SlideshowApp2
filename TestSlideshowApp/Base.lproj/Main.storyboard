@@ -23,6 +23,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="101.66666666666667" height="40"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="戻る"/>
+                                        <connections>
+                                            <action selector="BackWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g2h-ER-wvC"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbP-JN-cFc">
                                         <rect key="frame" x="105.66666666666666" y="0.0" width="101.66666666666666" height="40"/>
@@ -36,6 +39,9 @@
                                         <rect key="frame" x="211.33333333333334" y="0.0" width="101.66666666666666" height="40"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="進む"/>
+                                        <connections>
+                                            <action selector="GoWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S9J-dq-4bU"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
