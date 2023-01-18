@@ -45,15 +45,13 @@ class ViewController: UIViewController {
             UIImage(named: "autumn.jpeg")!
         ]
         
-        // 画像の番号が正常な範囲を指しているかチェック
-        
         // 範囲より下を指している場合、最後の画像を表示
         if nowIndex < 0 {
-            nowIndex = 2
+            nowIndex = 3
         }
         
         // 範囲より上を指している場合、最初の画像を表示
-        if nowIndex > 2 {
+        if nowIndex > 3 {
             nowIndex = 0
         }
         
@@ -93,8 +91,6 @@ class ViewController: UIViewController {
     
     
     @IBOutlet weak var goButton: UIButton!
-    
-    
     
     // スライドショーに使用するタイマーを宣言
     var timer: Timer!
