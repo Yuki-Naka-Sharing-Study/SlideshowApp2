@@ -21,7 +21,7 @@ class NextViewController: UIViewController {
         
     }
     
-    @IBAction func imageViewTapped(_ sender: Any) {
+    @IBAction func BackHome(_ sender: Any) {
         print("タップ")
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)

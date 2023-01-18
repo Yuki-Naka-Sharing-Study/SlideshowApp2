@@ -107,7 +107,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="1つ目の画面に戻る"/>
                                 <connections>
-                                    <action selector="imageViewTapped:" destination="FpT-aU-35G" eventType="touchUpInside" id="XgC-xr-yOa"/>
+                                    <action selector="BackHome:" destination="FpT-aU-35G" eventType="touchUpInside" id="huJ-bm-3hG"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="6Op-44-Hhl"/>
                                 </connections>
                             </button>
