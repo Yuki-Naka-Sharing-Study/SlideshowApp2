@@ -14,25 +14,25 @@ class ViewController: UIViewController {
     @IBAction func Back(sender: AnyObject) {
         
         // 表示している画像の番号を1減らす
-        dispImageNo -= 1
+        nowIndex -= 1
         
         // 表示している画像の番号を元に画像を表示する
-        displayImage()
+        nowIndex()
         
     }
     
     @IBAction func Go(sender: AnyObject) {
         
         // 表示している画像の番号を1増やす
-        dispImageNo += 1
+        nowIndex += 1
         
         // 表示している画像の番号を元に画像を表示する
-        displayImage()
+        nowIndex()
         
     }
     
     /// 表示している画像の番号
-    var dispImageNo = 0
+    var nowIndex = 0
     
     /// 表示している画像の番号を元に画像を表示する
     func displayImage() {
@@ -48,17 +48,17 @@ class ViewController: UIViewController {
         // 画像の番号が正常な範囲を指しているかチェック
         
         // 範囲より下を指している場合、最後の画像を表示
-        if dispImageNo < 0 {
-            dispImageNo = 2
+        if nowIndex < 0 {
+            nowIndex = 2
         }
         
         // 範囲より上を指している場合、最初の画像を表示
-        if dispImageNo > 2 {
-            dispImageNo = 0
+        if nowIndex > 2 {
+            nowIndex = 0
         }
         
         // 表示している画像の番号から名前を取り出し
-        let image = imageArray[dispImageNo]
+        let image = imageArray[nowIndex]
         
         // Image Viewに読み込んだ画像をセット
         imageView.image = image
