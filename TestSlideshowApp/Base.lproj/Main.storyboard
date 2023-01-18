@@ -105,6 +105,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="1つ目の画面に戻る"/>
+                                <connections>
+                                    <action selector="imageViewTapped:" destination="FpT-aU-35G" eventType="touchUpInside" id="XgC-xr-yOa"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ink-W2-KyH"/>

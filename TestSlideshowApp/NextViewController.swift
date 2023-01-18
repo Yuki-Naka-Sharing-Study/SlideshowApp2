@@ -21,7 +21,18 @@ class NextViewController: UIViewController {
         
     }
     
-    
+    @IBAction func imageViewTapped(_ sender: Any) {
+        print("タップ")
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let nextVC = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        
+        //NextViewControllerのimage(画像データ)をViewControllerのimage(変数)に渡す
+        nextVC.image = imageView2.image!
+        
+        //画面遷移
+        present(nextVC, animated: true, completion: nil)
+    }
     
 
     /*
