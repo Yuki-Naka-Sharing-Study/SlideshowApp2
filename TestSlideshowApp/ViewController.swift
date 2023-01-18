@@ -9,6 +9,9 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    // 配列に指定するindex番号を宣言
+    var nowIndex:Int = 0
+    
     @IBOutlet weak var imageView: UIImageView!
     
     @IBAction func Back(sender: AnyObject) {
@@ -94,8 +97,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var goButton: UIButton!
     
-    // 配列に指定するindex番号を宣言
-    var nowIndex:Int = 0
+    
     
     // スライドショーに使用するタイマーを宣言
     var timer: Timer!
