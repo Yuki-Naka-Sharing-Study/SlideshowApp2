@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         nowIndex -= 1
         
         // 表示している画像の番号を元に画像を表示する
-        nowIndex()
+        displayImage()
         
     }
     
@@ -30,12 +30,9 @@ class ViewController: UIViewController {
         nowIndex += 1
         
         // 表示している画像の番号を元に画像を表示する
-        nowIndex()
+        displayImage()
         
     }
-    
-    /// 表示している画像の番号
-    var nowIndex = 0
     
     /// 表示している画像の番号を元に画像を表示する
     func displayImage() {
@@ -45,7 +42,7 @@ class ViewController: UIViewController {
             UIImage(named: "winter.jpeg")!,
             UIImage(named: "spring.jpeg")!,
             UIImage(named: "summer.jpeg")!,
-            UIImage(named: "autumun.jpeg")!
+            UIImage(named: "autumn.jpeg")!
         ]
         
         // 画像の番号が正常な範囲を指しているかチェック
@@ -107,7 +104,7 @@ class ViewController: UIViewController {
         UIImage(named: "winter.jpeg")!,
         UIImage(named: "spring.jpeg")!,
         UIImage(named: "summer.jpeg")!,
-        UIImage(named: "autumun.jpeg")!
+        UIImage(named: "autumn.jpeg")!
     ]
     
     // 再生/停止ボタンを押した時の処理
