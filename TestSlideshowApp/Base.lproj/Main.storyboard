@@ -102,13 +102,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8G-5O-7wY">
-                                <rect key="frame" x="111" y="409" width="171" height="35"/>
+                                <rect key="frame" x="111" y="409" width="171" height="183"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="1つ目の画面に戻る"/>
                                 <connections>
-                                    <action selector="BackHome:" destination="FpT-aU-35G" eventType="touchUpInside" id="huJ-bm-3hG"/>
-                                    <action selector="backHome:" destination="FpT-aU-35G" eventType="touchUpInside" id="lc8-Ch-udP"/>
+                                    <action selector="backHome:" destination="FpT-aU-35G" eventType="touchUpInside" id="z9N-NP-jyP"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="6Op-44-Hhl"/>
                                 </connections>
                             </button>
@@ -122,7 +121,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f64-Mi-y2S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="924" y="-27"/>
+            <point key="canvasLocation" x="922.90076335877859" y="-27.464788732394368"/>
         </scene>
     </scenes>
     <resources>
