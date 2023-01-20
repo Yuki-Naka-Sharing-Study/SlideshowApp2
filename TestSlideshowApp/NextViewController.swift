@@ -21,8 +21,12 @@ class NextViewController: UIViewController {
         
     }
     
+    @IBAction func backHome(_ sender: Any) {
+        print("タップ")
+        
+        dismiss(animated: true, completion: nil)
+    }
     
-
     /*
     // MARK: - Navigation
 
