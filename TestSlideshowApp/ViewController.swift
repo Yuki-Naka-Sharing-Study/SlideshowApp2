@@ -81,6 +81,26 @@ class ViewController: UIViewController {
         
         //画面遷移
         present(nextVC, animated: true, completion: nil)
+        
+        //画面遷移後１つ目の画面のスライドショーを止める
+        // 再生中か停止しているかを判定
+        if (timer == nil) {
+            // 再生時の処理を実装
+                    
+            // タイマーをセットする
+            timer = Timer.scheduledTimer(timeInterval: 2.0,
+            target: self, selector: #selector(changeImage),
+             userInfo: nil, repeats: true)
+
+        } else {
+            // 停止時の処理を実装
+            // タイマーを停止する
+            timer.invalidate()
+                    
+            // タイマーを削除しておく(timer.invalidateだけだとtimerがnilにならないため)
+            timer = nil
+
+        }
     }
     
     // outletの接続
